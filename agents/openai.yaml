@@ -1,0 +1,6 @@
+interface:
+  display_name: "资料蒸馏为可用问答"
+  short_description: "把企业资料、教程和课程整理成有原文出处的客户问答，单列资料缺口与矛盾规则"
+  default_prompt: "请使用 $aimegeo-knowledge-distill，将我提供的资料整理为客户问答、资料索引和待补及冲突清单，每项答案标明原文出处，按实际资料决定问题数量。"
+  icon_small: "./icon-512.png"
+  icon_large: "./icon-512.png"
