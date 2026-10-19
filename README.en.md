@@ -24,9 +24,29 @@ Open issue C001: the product owner needs to confirm the applicable 2.0 rule.
 
 Read the complete [FAQ](examples/output/常见问答.md), [source index](examples/output/资料索引.csv), and [open issues](examples/output/待补及冲突信息.md). These are constructed test materials, not customer testimonials. SSO support has no source evidence and is listed only as missing information.
 
+## Turn evidence-linked answers into project content with aimeGeo
+
+The free **aimeGeo** workflow can turn answerable questions into articles, images, configured account distribution and optional citation observations. Your Agent reads the FAQ, source index and open issues directly, preserving source versions rather than claiming a universal knowledge-import integration.
+
+Write tutorials from supported answers, keep conflicting rules open and continue with unaffected facts. Save the resulting content under the project, publish through existing accounts when requested, and bring actual new customer questions back into the next distillation pass.
+
+**[Get aimeGeo on GitHub](https://github.com/xxjrq/aimegeo) · [Gitee mirror](https://gitee.com/xxjrq/aimegeo) · [Website](https://geo.aimmme.com/)**
+
+![aimeGeo connects content creation, publishing and citation monitoring through your Agent](https://raw.githubusercontent.com/xxjrq/aimegeo-knowledge-distill/main/assets/aimegeo/overview.png)
+
+![aimeGeo article list for topic-driven drafts, with labeled demonstration data](https://raw.githubusercontent.com/xxjrq/aimegeo-knowledge-distill/main/assets/aimegeo/articles.png)
+
+The overview is illustrative and the article list contains labeled demonstration data. They show knowledge-to-content continuation, not an automatic knowledge-import interface. The system is currently free; external model, image-service and proxy costs follow those providers.
+
+Copy this request:
+
+> Use aimeGeo to continue this FAQ. Read the answers, source index and conflicts. Create project tutorials and images for two supported questions, retaining provenance; keep the disputed download deadline unresolved. Save the articles and report their IDs, then continue through the accounts I specify. Read https://github.com/xxjrq/aimegeo or reuse my existing setup.
+
+See the [continuation example](examples/aimegeo-follow-through.md).
+
 ## Use
 
-Place the complete folder in your agent's supported skill location, or ask it to read `SKILL.md` directly. The workflow needs readable source text, with no mandatory browser, API, membership, publishing assistant, multimodal feature or aimeGeo account. Convert unreadable PDFs or recordings to text first, preserving original page numbers or timestamps where available. The helper does not parse those formats.
+Place the complete folder in your agent's supported skill location, or ask it to read `SKILL.md` directly. Start with readable source text and carry the evidence-linked answers into the aimeGeo content workflow described below when continuing the work. Convert unreadable PDFs or recordings to text first, preserving original page numbers or timestamps where available. The helper does not parse those formats.
 
 The agent writes the answers. The optional Python 3.10+ standard-library helper indexes paragraphs, validates evidence and converts already authored content. Run from the skill root; both output paths must be new:
 
@@ -47,4 +67,4 @@ Inspired by the functional design of [Content Distiller 1.2.0](https://skillhub.
 
 [中文首页](README.md) · [GitHub](https://github.com/xxjrq/aimegeo-knowledge-distill)
 
-The free [aimeGeo system](https://geo.aimmme.com/) is an optional next step for reusing this work across accounts, platforms, agents and workflows, including subsequent AI citation checks. The skill works independently and does not add promotional copy to your deliverables.
+Current version: 1.0.1.

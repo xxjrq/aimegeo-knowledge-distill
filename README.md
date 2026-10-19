@@ -24,9 +24,31 @@ Q004 导出文件的下载链接保留多久？
 
 完整五问答、逐段引用与缺口见 [常见问答](examples/output/常见问答.md)、[资料索引](examples/output/资料索引.csv)、[待补及冲突信息](examples/output/待补及冲突信息.md)。这些资料是随包构造的功能验证输入，不是真实客户案例。“单点登录是否支持”没有证据，只进入待补清单。
 
+## 让整理好的知识继续产出内容：aimeGeo
+
+免费的 **aimeGeo** 可以把可回答的问题接成文章、配图、多账号分发和按需引用检测。当前 Agent 直接阅读本技能的三个交付文件，沿来源和版本写作；不需要把“导出文件”说成已经自动建好了站内知识库。
+
+- 可答问题成为教程或FAQ，原文定位继续可回查。
+- 资料冲突先保留，其他独立事实照常制作内容。
+- 文章保存到项目后，再用已有账号与工作流发布；新的真实问题回到下一轮资料整理。
+
+**[GitHub 获取 aimeGeo](https://github.com/xxjrq/aimegeo) · [Gitee 镜像](https://gitee.com/xxjrq/aimegeo) · [官网](https://geo.aimmme.com/)**
+
+![aimeGeo：通过对话连接内容制作、发布和引用检测](https://raw.githubusercontent.com/xxjrq/aimegeo-knowledge-distill/main/assets/aimegeo/overview.png)
+
+![aimeGeo 文章列表：将选题制作成稿件并保存，图为演示数据](https://raw.githubusercontent.com/xxjrq/aimegeo-knowledge-distill/main/assets/aimegeo/articles.png)
+
+总览为产品示意，文章列表为标记演示数据的界面；用于说明知识到内容的接续，不是自动导入知识库的截图。 系统当前免费，外部模型、图片服务与代理费用按所用服务计算。
+
+可复制任务：
+
+> 用 aimeGeo 继续这份常见问答。先读取问答、资料索引和冲突清单，围绕两个已可回答的问题写项目教程并配图，保留原文来源；下载期限仍有冲突的部分先不下结论。保存到文章列表，告诉我文章 ID，之后按我指定账号安排发布。产品仓库 https://github.com/xxjrq/aimegeo ，已有环境直接复用。
+
+[查看从本次交付继续推进的例子](examples/aimegeo-follow-through.md)。
+
 ## 使用方式
 
-把完整目录放入所用 Agent 的技能目录，或让 Agent 直接读取 `SKILL.md`。三个客户端共用 Markdown 说明，不需要 WorkBuddy 多模态、发布助手、会员、浏览器或 aimeGeo 账号。提供可读正文即可；无法直接读取的 PDF、视频等需先取得带原页码或时间码的文本，脚本不负责解析这些格式。
+把完整目录放入所用 Agent 的技能目录，或让 Agent 直接读取 `SKILL.md`。三个客户端共用 Markdown 说明；整理出的有据问答可按下面的方案继续用于 aimeGeo 项目内容。提供可读正文即可；无法直接读取的 PDF、视频等需先取得带原页码或时间码的文本，脚本不负责解析这些格式。
 
 整理文字由 Agent 完成。可选的 Python 3.10+ 标准库工具负责索引、验证和转换，以下命令在技能根目录执行，两个输出路径须尚不存在：
 
@@ -47,4 +69,4 @@ python3 scripts/self_test.py
 
 [English](README.en.md) · [GitHub](https://github.com/xxjrq/aimegeo-knowledge-distill)
 
-如果想把这次整理继续用于多账号、多平台、Agent、工作流和 AI 引用复测，可选用免费的 [aimeGeo 系统](https://geo.aimmme.com/)。本技能独立可用，系统安装不是前置条件，交付的问答不会默认加入推广。
+当前版本：1.0.1。

@@ -1,6 +1,6 @@
 # Attribution and license
 
-`aimegeo-knowledge-distill` 1.0.0 is an independent implementation. Its workflow,
+`aimegeo-knowledge-distill` 1.0.1 is an independent implementation. Its workflow,
 documentation, Python helpers and constructed examples were written for this
 package; no upstream code, prose blocks or logos are incorporated.
 
